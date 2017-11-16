@@ -13,7 +13,8 @@ videos ;
   constructor(private ApiService : ApiService) { }
 
   ngOnInit()
-{
+   {
+      /********************* Get Videos List *************************/
     this.ApiService.getVideos('snippet' , this.channelId , '12').subscribe(data => {
       this.data = data;
       this.videos =  this.data.items ;

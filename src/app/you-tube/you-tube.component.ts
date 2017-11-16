@@ -8,16 +8,17 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class YouTubeComponent implements OnInit {
-  channelList ;
-  show : boolean = false
-  constructor(private ApiService : ApiService) { }
+  channelList;
+  show: boolean = false
+  constructor(private ApiService: ApiService) { }
 
   ngOnInit() {
     this.show = true
-    this.ApiService.getChannel().subscribe(data=>{
-      this.channelList = data ;
+    /********************* Show Channel List *************************/
+    this.ApiService.getChannel().subscribe(data => {
+      this.channelList = data;
       console.log(this.channelList);
-      this.show = false ;
+      this.show = false;
     })
   }
 
