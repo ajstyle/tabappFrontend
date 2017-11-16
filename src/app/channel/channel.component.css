@@ -1,0 +1,53 @@
+.fancybox-slide--video .fancybox-content {
+    width: 800px;
+    height: 600px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.title {
+    font-size: 1000px;
+}
+
+.mat-card {
+    max-width: 360px;
+    min-width: 360px;
+    min-height: 250px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    /* Applies to unvisited links in class mainNav */
+    text-decoration: none;
+}
+
+a:visited {
+    /* Applies to visited links in class mainNav */
+    text-decoration: none;
+}
+
+a:hover {
+    /* Applies to links under the pointer in class mainNav */
+    text-decoration: none;
+}
+
+a:active {
+    /* Applies to activated links in class mainNav */
+    text-decoration: none;
+}

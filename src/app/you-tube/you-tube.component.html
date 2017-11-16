@@ -1,0 +1,22 @@
+<div class="container">
+
+
+    <div *ngIf=show>
+        <mat-spinner style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+    </div>
+    <div class="row" *ngIf="channelList?.length > 0 else empty">
+        <div class="row" *ngFor="let channel of channelList">
+            <div class="col-md-12">
+                <app-channel [channelId]="channel.ChannelId"></app-channel>
+            </div>
+
+        </div>
+
+
+    </div>
+    <ng-template #empty>
+        <h2> You Tube Video Available Shortly</h2>
+        <img src="../../assets/muted.png" width="200px" height="200px" style="margin : auto ; display : block " />
+
+    </ng-template>
+</div>
